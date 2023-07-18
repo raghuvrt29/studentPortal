@@ -1,0 +1,14 @@
+version: '1'
+services:
+  web:
+    image: student-portal
+    build: .
+    command: "node app.js"
+    ports:
+      - "3000:3000"
+    depends_on :
+      - "mongo"
+  mongo:
+    image: mongo
+    ports: 
+      - "27017:27017"

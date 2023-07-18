@@ -17,7 +17,16 @@ This is a portal in which an university can manage its departments, courses, tea
 
 ---
 
-## User Roles
+## Authentication and Authorization
+- [x] Admin signup using name, email id and password.
+- [x] User signup using name, unique email id, department they belong to and password.
+- [x] Admin and user login with email id and password.
+- [x] Admin and user authorization with JWT.
+- [x] User can update their details like name, email id and password.
+
+---
+
+## Functionalities of each user role
 
 ### Admin
 - [x] Create a department.
@@ -43,12 +52,3 @@ This is a portal in which an university can manage its departments, courses, tea
 ### Student
 - [x] View their scores in the courses they are enrolled.
 - [x] View the course resources uploaded.
-
----
-
-## Authentication and Authorization
-- [x] Admin signup using name, email id and password.
-- [x] User signup using name, unique email id, department they belong to and password.
-- [x] Admin and user login with email id and password.
-- [x] Admin and user authorization with JWT.
-- [x] User can update their details like name, email id and password.

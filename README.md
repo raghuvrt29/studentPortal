@@ -10,31 +10,45 @@ This is a portal in which an university can manage its departments, courses, tea
 ## Basic work flow of the portal
 - An admin representing an university can signup and login.
 - Now the admin can add new departments and appoint HODs.
-- New users can signup as teacher or a student, existing users can login.
+- New users can signup as a teacher or a student, existing users can login.
 - The HOD of a department or the admin can add courses to the department appoint a teacher to that course.
 - The teacher of a course can enroll students in that course, edit marks of a student in that course and also upload course resources.
 - The students in a course can view their marks in the course and also the course resources.
 
 ---
 
-## Detailed Functionalities
-### Authentication and Authorization
-- The admin can signup using name, unique email id and password.
-- The users can signup using name, unique email id, department they belong to and password.
-- The admin and the users can login with email id and password.
-- The authorization of both the admin and the users is done using JWT.
-- The users and the admin can update their name, email and password.
+## User Roles
 
-### Departments
-- Only the admin can create a new department and appoint the HOD.
-- The admin can also change the HOD of a department.
-- The HOD  of the department and the admin have the access to make changes in the department.
-- They can add or delete courses in the department and appoint a teacher from the same department.
-- They can also delete a user from the portal.
+### Admin
+- [x] Create a department.
+- [x] Appoint a HOD(while creating the department).
+- [x] Change the HOD of a department.
+- [x] Perform all the actions that can be performed by a HOD.
 
-### Courses
-- The teacher of the course, the HOD of the department and the admin have the access to make any changes in the course.
-- They can enroll or delist a student in the course.
-- They can change the scores of a student enrolled in the course.
-- They can also upload or delete the course resources.
+### HOD
+- [x] Create a course.
+- [x] Appoint a teacher to a course(while creating the course).
+- [x] Change the teacher of a course.
+- [x] Discard a course.
+- [x] Discard a teacher or a student.
+- [x] Perform all the actions that can be performed by a teacher.
 
+### Teacher
+- [x] Enroll a student.
+- [x] Delist a student.
+- [x] View and Edit scores of a student.
+- [x] Upload course resources.
+- [x] Delete course resoures.
+
+### Student
+- [x] View their scores in the courses they are enrolled.
+- [x] View the course resources uploaded.
+
+---
+
+## Authentication and Authorization
+- [x] Admin signup using name, email id and password.
+- [x] User signup using name, unique email id, department they belong to and password.
+- [x] Admin and user login with email id and password.
+- [x] Admin and user authorization with JWT.
+- [x] User can update their details like name, email id and password.

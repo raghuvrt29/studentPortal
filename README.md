@@ -1,4 +1,4 @@
-# Student Portal for an University
+# University Management System
 
 ---
 
